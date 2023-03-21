@@ -22,6 +22,8 @@ public class Driver {
                    driverPool.set(new ChromeDriver());
                    driverPool.get().manage().window().maximize();
                    driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                   System.out.println("this is chrome driver");
+
                    break;
                case "firefox":
                    WebDriverManager.firefoxdriver().setup();
