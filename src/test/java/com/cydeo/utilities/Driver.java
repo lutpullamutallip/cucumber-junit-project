@@ -12,9 +12,6 @@ public class Driver {
    // private static WebDriver driver;
 
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
-
-
-
     public static WebDriver getDriver(){
         if(driverPool.get() == null){
            String browserType = ConfigurationReader.getProperty("browser");
